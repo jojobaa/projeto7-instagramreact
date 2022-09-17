@@ -1,0 +1,325 @@
+body{
+    font-family: 'Roboto', sans-serif;   
+    background-color: #FAFAFA;
+    overflow-x: hidden;
+}
+.container{
+   display: flex;
+   max-width: 100%;
+}
+header{
+   
+}
+.topo {
+    width: 100%;
+    height: 54px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    position: fixed;
+    top:0;
+    left: 0; 
+    z-index: 1; 
+}
+.topo ion-icon{
+    width: 23px;
+    height: 23px;
+}
+.box{  
+    background-color: #FAFAFA;
+    border: 1px solid #e7e7e7;
+    border-radius: 3px;
+    width: 215px;
+    height: 28px;  
+}
+.box p{
+    text-align: center;
+    font-size: 12px;
+    padding-top: 7px;
+    color:#979797;
+}
+.iconinsta{
+    display: flex;
+    padding-left: 210px;
+}
+.iconedoinsta{
+    border-right: 1px solid #e7e7e7;
+    padding-right: 10px;
+}
+.logo-instagram{
+    padding-bottom: 50px;
+    width: 22px;
+    height: 22px;
+}
+.iconinsta img{
+    width: 103px;
+    height: 29px;
+    padding-left: 10px;
+}
+.icons2{
+    display: flex;
+    justify-content: space-around;
+    padding-right: 256px;
+}
+.icones{
+    margin-right: 15px;
+    width: 22px;
+    height: 22px;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    margin-top: 52px;
+    margin-left: 215px;
+}
+.storys{
+    display: flex;
+    align-items: center;
+    border: 1px solid #e7e7e7;
+    border-radius: 3px;
+    width: 614px;
+    height: 118px;
+    margin-top: 30px;  
+    margin-bottom: 30px;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+}
+.storys ion-icon{
+    position: absolute;
+    right: 9px;
+    bottom: 46px;
+    font-size: 32px;
+    color: white;
+}
+.story{
+ margin-right: 5px;
+ margin-left: 10px;
+}
+.storys img{
+    border-radius: 28px;
+    width: 56px;
+    height: 56px;
+}
+.bordastory{
+    width: 66px;
+    height: 66px;
+    background-image: url(/img/project/stories_background.jpg);
+    background-size: cover;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.txtstory{
+    text-align: center;
+    font-size: 12px;
+    padding-top: 4px;
+}
+.postagens{
+    width: 614px;
+    height: 1900px;
+    overflow: hidden;
+}
+.post{
+    margin-bottom:60px ;    
+    overflow: hidden;
+    /* margin-top: 60px; */
+}
+.posts{
+    width: 614px;
+    height: 749px;
+    background-color: white;
+    border: 1px solid #e7e7e7;
+}
+
+.imgdoposts{
+    width: 614px;
+    margin-top: 30px;
+}
+.imgdopost{
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    margin-left: 20px;
+}
+.topopost{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.topopost p{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.topopost ion-icon{
+    margin-right: 20px;
+}
+.postconteudo{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.postconteudo p{
+    margin-left: 20px;   
+    
+}
+.iconspost{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.iconspost ion-icon{
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+.likeposts{
+    font-size: 14px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+}
+.likeposts p{
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.imglike{
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+}
+.sidebar{
+    margin-top: 100px;
+    margin-left: 30px;
+    width: 300px;
+    height: 500px;
+}
+.toposidebar{
+    display: flex;
+    align-items: center;
+}
+.txtperfil{
+    margin-left: 10px;
+}
+.txtperfil p{
+    margin-top: 5px;
+    font-size: 12px;
+    color: #8E8E8E;
+}
+.txtperfil h3{
+    margin-top: 10px;
+    font-size: 14px;
+}
+.sugestao{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.sugestao p{
+    margin-bottom: 10px;
+    color: #8E8E8E;
+}
+.imgsidebar{
+    border-radius: 28px;
+    margin-top: 15px;
+    margin-left: 5px;
+    width: 56px;
+    height: 56px;
+}
+.txtsidebar{
+    color: #139EF2;
+    margin-left: 103px;
+}
+.sugestoesdireita{
+    display: flex;
+}
+.sugestoesdireita img{
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+}
+.legenda p{
+    margin-top: 30px;
+    font-size: 11px;
+    color: #C7C7C7;
+}
+.barradebaixo{
+    display: none;
+}
+
+@media (max-width: 935px) { 
+    .sidebar {
+        display: none;
+    }
+    .conteudo{
+        margin-left: 0px;
+    }
+    .container{
+        justify-content: center;
+    }
+    .iconinsta{
+        padding-left: 15px;
+    }
+    .icons2{
+        padding: 0;
+    }
+  
+}
+@media (max-width: 614px){
+  
+    .box{
+        display: none;
+    }
+   .conteudo{
+       width: 100%;
+   }
+   .storys{
+       background-color: #FAFAFA;
+       border: 0;
+   }
+   .storys ion-icon{
+       display: none;
+   }
+   .topo {
+       margin-bottom: 0px;
+       width: 100%;
+   }
+   .iconinsta{
+       display: contents;
+   }
+   .iconedoinsta{
+       padding-left: 15px;
+   }
+   .direitatopo{
+       display: none;
+   }
+   .barradebaixo{ 
+    width: 100%;
+    height: 54px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 0 22px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+   }
+   .iconesbaixo{
+       display: flex;
+       width: 100%;   
+   }
+   .icone-1{
+      display: block;
+      width: 100%;
+    
+   }
+}
