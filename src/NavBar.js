@@ -1,4 +1,5 @@
 export default function NavBar() {
+    
     return(
     <div class="topo">
         <div class="iconinsta">

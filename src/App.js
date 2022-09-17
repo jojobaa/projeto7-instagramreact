@@ -1,4 +1,6 @@
 import NavBar from "./NavBar"
+import Corpo from "./Corpo"
+import SideBar from "./SideBar"
 
 export default function App() {
     return (
@@ -6,6 +8,8 @@ export default function App() {
             <header>
                 <NavBar/>
             </header>
+           <Corpo/>
+           <SideBar/>
         </div>
     )
 }
