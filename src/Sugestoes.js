@@ -1,4 +1,32 @@
+function Sugestao(props) {
+    return (
+        <div class="sugestoesdireita">
+            <img src={props.imgsidebar} />
+            <div class="txtperfil">
+                <h3>
+                    {props.h3}
+                </h3>
+                <p>
+                    {props.p}
+                </p>
+            </div>
+            <p class="txtsidebar">
+               {props.txt}
+            </p>
+        </div>
+    )
+}
+
 export default function Sugestoes() {
+
+    const sugestoes = [
+        { imgsidebar: "/imgsidebar/animais1.jpg", h3: "bad.vibes.memes", p: "Segue você", txt: "seguir" },
+        { imgsidebar: "/imgsidebar/animais2.jpg", h3: "bad.vibes.memes", p: "Segue você", txt: "seguir" },
+        { imgsidebar: "/imgsidebar/animais3.jpg", h3: "bad.vibes.memes", p: "Segue você", txt: "seguir" },
+        { imgsidebar:"/imgsidebar/animais4.jpg", h3: "bad.vibes.memes", p: "Segue você", txt: "seguir" },
+        { imgsidebar: "/imgsidebar/animais5.jpg", h3: "bad.vibes.memes", p: "Segue você", txt: "seguir" }
+    ]
+
     return (
         <div class="user">
             <div class="sugestao">
@@ -10,84 +38,7 @@ export default function Sugestoes() {
                 </p>
             </div>
             <div class="sugestoes">
-                <div class="sugestoesdireita">
-                    <img src="/imgsidebar/animais1.jpg" />
-                    <div class="txtperfil">
-                        <h3>
-                            bad.vibes.memes
-                        </h3>
-                        <p>
-                            Segue você
-                        </p>
-                    </div>
-                    <p class="txtsidebar">
-                        seguir
-                    </p>
-                </div>
-            </div>
-            <div class="sugestoes">
-                <div class="sugestoesdireita">
-                    <img src="/imgsidebar/animais2.jpg" />
-                    <div class="txtperfil">
-                        <h3>
-                            bad.vibes.memes
-                        </h3>
-                        <p>
-                            Segue você
-                        </p>
-                    </div>
-                    <p class="txtsidebar">
-                        seguir
-                    </p>
-                </div>
-            </div>
-            <div class="sugestoes">
-                <div class="sugestoesdireita">
-                    <img src="/imgsidebar/animais3.jpg" />
-                    <div class="txtperfil">
-                        <h3>
-                            bad.vibes.memes
-                        </h3>
-                        <p>
-                            Segue você
-                        </p>
-                    </div>
-                    <p class="txtsidebar">
-                        seguir
-                    </p>
-                </div>
-            </div>
-            <div class="sugestoes">
-                <div class="sugestoesdireita">
-                    <img src="/imgsidebar/animais4.jpg" />
-                    <div class="txtperfil">
-                        <h3>
-                            bad.vibes.memes
-                        </h3>
-                        <p>
-                            Segue você
-                        </p>
-                    </div>
-                    <p class="txtsidebar">
-                        seguir
-                    </p>
-                </div>
-            </div>
-            <div class="sugestoes">
-                <div class="sugestoesdireita">
-                    <img src="/imgsidebar/animais5.jpg" />
-                    <div class="txtperfil">
-                        <h3>
-                            bad.vibes.memes
-                        </h3>
-                        <p>
-                            Segue você
-                        </p>
-                    </div>
-                    <p class="txtsidebar">
-                        seguir
-                    </p>
-                </div>
+               {sugestoes.map((s) => (<Sugestao imgsidebar={s.imgsidebar} h3={s.h3} p={s.p} txt={s.txt}/>))}
             </div>
             <div class="legenda">
                 <p>

@@ -1,3 +1,16 @@
+function Storys(props) {
+    return (
+        <div class="story">
+            <div class="bordastory">
+                <img src={props.img} class="imgstory" alt="" />
+            </div>
+            <p class="txtstory">
+                {props.p}
+            </p>
+        </div>
+    )
+}
+
 export default function Stories() {
     const stories = [
 
@@ -15,16 +28,7 @@ export default function Stories() {
 
     return (
         <div class="storys">
-            {stories.map((s) => (
-                <div class="story">
-                    <div class="bordastory">
-                        <img src={s.img} class="imgstory" alt="" />
-                    </div>
-                    <p class="txtstory">
-                        {s.p}
-                    </p>
-                </div>
-            ))}
+            {stories.map((s) => (<Storys img={s.img} p={s.p}/>))}
         </div>
     )
 }
