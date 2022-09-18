@@ -8,6 +8,7 @@ export default function Usuario() {
                 </h3>
                 <p>
                     Catana
+                    <ion-icon name="pencil-outline"></ion-icon>
                 </p>
             </div>
         </div>
